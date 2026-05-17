@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inicio | Val Beauty</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#fffafb;
+color:#444;
+}
+
+/* MENÚ */
+
+nav{
+width:100%;
+padding:22px 0;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-size:17px;
+font-weight:500;
+transition:.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+width:0%;
+height:2px;
+background:#d98c9a;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+nav a:hover{
+color:#d98c9a;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(255,250,251,.75),
+rgba(255,250,251,.75)),
+url("banner.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-contenido{
+max-width:750px;
+background:rgba(255,255,255,.65);
+padding:50px;
+border-radius:30px;
+backdrop-filter:blur(6px);
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:75px;
+color:#c97b8a;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:24px;
+font-weight:300;
+color:#666;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:30px;
+}
+
+/* BOTÓN */
+
+.boton{
+display:inline-block;
+padding:14px 35px;
+background:#c97b8a;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:16px;
+font-weight:500;
+transition:.3s;
+box-shadow:0 8px 20px rgba(201,123,138,.25);
+}
+
+.boton:hover{
+transform:translateY(-3px);
+background:#b86c7b;
+}
+
+/* SECCIÓN EXTRA */
+
+.info{
+width:85%;
+max-width:1100px;
+margin:90px auto;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:35px;
+width:300px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Playfair Display',serif;
+color:#c97b8a;
+font-size:28px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:16px;
+line-height:1.8;
+color:#666;
+}
+
+/* FRASE */
+
+.frase{
+text-align:center;
+margin:40px 20px 80px;
+font-size:24px;
+font-style:italic;
+color:#b56b79;
+font-family:'Playfair Display',serif;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-contenido">
+
+<h1>Val Beauty</h1>
+
+<h2>Maquillaje que resalta tu esencia </h2>
+
+<p>
+En Val Beauty creemos que el maquillaje es una forma de expresar personalidad, 
+seguridad y estilo. Descubre productos modernos, elegantes y de excelente calidad 
+pensados para hacerte brillar en cualquier ocasión.
+</p>
+
+<a href="productos.html" class="boton">
+Ver productos
+</a>
+
+</div>
+
+</section>
+
+<section class="info">
+
+<div class="card">
+<h3>Calidad</h3>
+<p>
+Trabajamos con productos cuidadosamente seleccionados para ofrecerte maquillaje moderno, duradero y en tendencia.
+</p>
+</div>
+
+<div class="card">
+<h3>Estilo</h3>
+<p>
+Encuentra tonos, accesorios y colecciones ideales para expresar tu personalidad y resaltar tu belleza natural.
+</p>
+</div>
+
+<div class="card">
+<h3>Confianza</h3>
+<p>
+Nuestro objetivo es que cada persona se sienta segura, cómoda y hermosa con cada producto que utiliza.
+</p>
+</div>
+
+</section>
+
+<p class="frase">
+“Glow different, glow with confidence.” 
+</p>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Servicios | Val Beauty</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#fffafb;
+color:#444;
+}
+
+/* MENÚ */
+
+nav{
+width:100%;
+padding:22px 0;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-size:17px;
+font-weight:500;
+transition:.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+width:0%;
+height:2px;
+background:#d98c9a;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+nav a:hover{
+color:#d98c9a;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+padding-top:150px;
+text-align:center;
+padding-bottom:70px;
+}
+
+.encabezado h1{
+font-family:'Playfair Display',serif;
+font-size:72px;
+color:#c97b8a;
+margin-bottom:15px;
+}
+
+.encabezado p{
+font-size:20px;
+color:#666;
+width:70%;
+max-width:750px;
+margin:auto;
+line-height:1.9;
+}
+
+/* CONTENEDOR */
+
+.servicios{
+width:90%;
+max-width:1250px;
+margin:auto;
+display:flex;
+justify-content:center;
+gap:35px;
+flex-wrap:wrap;
+padding-bottom:90px;
+}
+
+/* TARJETAS */
+
+.card{
+background:white;
+width:340px;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* IMÁGENES */
+
+.imagen{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+/* CONTENIDO */
+
+.contenido{
+padding:30px;
+text-align:center;
+}
+
+.card h2{
+font-family:'Playfair Display',serif;
+color:#c97b8a;
+font-size:32px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:16px;
+line-height:1.9;
+color:#666;
+}
+
+/* FRASE */
+
+.frase{
+text-align:center;
+padding-bottom:80px;
+font-size:25px;
+font-style:italic;
+font-family:'Playfair Display',serif;
+color:#b56b79;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+<section class="encabezado">
+
+<h1>Nuestros Servicios</h1>
+
+<p>
+En Val Beauty ofrecemos experiencias únicas y servicios especializados 
+para ayudarte a resaltar tu belleza con elegancia, estilo y confianza.
+</p>
+
+</section>
+
+<section class="servicios">
+
+<div class="card">
+
+<img src="asesoria.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Asesoría</h2>
+
+<p>
+Te ayudamos a elegir productos ideales para tu tono de piel, estilo y preferencias personales.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="maquillaje.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Maquillaje</h2>
+
+<p>
+Realizamos maquillajes modernos y elegantes para eventos especiales y ocasiones importantes.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="envios.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Envíos</h2>
+
+<p>
+Contamos con entregas rápidas y seguras para que recibas tus productos favoritos hasta tu hogar.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="skincare.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Skincare</h2>
+
+<p>
+Encuentra productos para el cuidado facial y crea una rutina perfecta para tu piel.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="productos.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Productos</h2>
+
+<p>
+Ofrecemos maquillaje moderno, accesorios y colecciones exclusivas de excelente calidad.
+</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="atencion.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Atención</h2>
+
+<p>
+Brindamos atención personalizada para hacer de tu experiencia algo cómodo y especial.
+</p>
+
+</div>
+</div>
+
+</section>
+
+<p class="frase">
+“Beauty begins the moment you decide to be yourself.” 
+</p>
+
+</body>
+</html>

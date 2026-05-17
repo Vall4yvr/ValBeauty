@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Productos | Val Beauty</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#fffafb;
+color:#444;
+}
+
+/* MENÚ */
+
+nav{
+width:100%;
+padding:22px 0;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-size:17px;
+font-weight:500;
+transition:.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+width:0%;
+height:2px;
+background:#d98c9a;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+nav a:hover{
+color:#d98c9a;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+padding-top:150px;
+text-align:center;
+padding-bottom:70px;
+}
+
+.encabezado h1{
+font-family:'Playfair Display',serif;
+font-size:72px;
+color:#c97b8a;
+margin-bottom:15px;
+}
+
+.encabezado p{
+font-size:20px;
+color:#666;
+width:70%;
+max-width:750px;
+margin:auto;
+line-height:1.9;
+}
+
+/* PRODUCTOS */
+
+.productos{
+width:90%;
+max-width:1300px;
+margin:auto;
+display:flex;
+justify-content:center;
+gap:35px;
+flex-wrap:wrap;
+padding-bottom:90px;
+}
+
+/* TARJETAS */
+
+.card{
+background:white;
+width:320px;
+border-radius:28px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* IMAGEN */
+
+.imagen{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+/* CONTENIDO */
+
+.contenido{
+padding:28px;
+text-align:center;
+}
+
+.card h2{
+font-family:'Playfair Display',serif;
+color:#c97b8a;
+font-size:30px;
+margin-bottom:12px;
+}
+
+.descripcion{
+font-size:15px;
+line-height:1.8;
+color:#666;
+margin-bottom:18px;
+}
+
+/* PRECIO */
+
+.precio{
+font-size:24px;
+font-weight:600;
+color:#b56b79;
+}
+
+/* FRASE */
+
+.frase{
+text-align:center;
+padding-bottom:80px;
+font-size:25px;
+font-style:italic;
+font-family:'Playfair Display',serif;
+color:#b56b79;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+<section class="encabezado">
+
+<h1>Nuestros Productos</h1>
+
+<p>
+Descubre nuestra colección de maquillaje y skincare diseñada para resaltar tu belleza 
+con productos modernos, elegantes y de excelente calidad.
+</p>
+
+</section>
+
+<section class="productos">
+
+<div class="card">
+
+<img src="labiales.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Labiales</h2>
+
+<p class="descripcion">
+Colores intensos y acabados elegantes para cualquier ocasión.
+</p>
+
+<p class="precio">$199 MXN</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="sombras.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Sombras</h2>
+
+<p class="descripcion">
+Paletas modernas con tonos suaves, brillantes y altamente pigmentados.
+</p>
+
+<p class="precio">$349 MXN</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="brochas.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Brochas</h2>
+
+<p class="descripcion">
+Brochas profesionales para lograr un maquillaje perfecto y uniforme.
+</p>
+
+<p class="precio">$279 MXN</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="bases.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Bases</h2>
+
+<p class="descripcion">
+Cobertura ligera y natural para una piel luminosa y radiante.
+</p>
+
+<p class="precio">$320 MXN</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="skincare2.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Skincare</h2>
+
+<p class="descripcion">
+Productos ideales para hidratar, proteger y cuidar tu piel diariamente.
+</p>
+
+<p class="precio">$410 MXN</p>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="rubores.jpg" class="imagen">
+
+<div class="contenido">
+
+<h2>Rubores</h2>
+
+<p class="descripcion">
+Tonos delicados y naturales para darle vida y frescura a tu maquillaje.
+</p>
+
+<p class="precio">$185 MXN</p>
+
+</div>
+</div>
+
+</section>
+
+<p class="frase">
+“Makeup is art, beauty is spirit.” 
+</p>
+
+</body>
+</html>

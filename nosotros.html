@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Nosotros | Val Beauty</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#fffafb;
+color:#444;
+}
+
+/* MENÚ */
+
+nav{
+width:100%;
+padding:22px 0;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(10px);
+position:fixed;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#555;
+font-size:17px;
+font-weight:500;
+transition:.3s;
+position:relative;
+}
+
+nav a::after{
+content:"";
+width:0%;
+height:2px;
+background:#d98c9a;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:.3s;
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+nav a:hover{
+color:#d98c9a;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+padding-top:150px;
+text-align:center;
+padding-bottom:60px;
+}
+
+.encabezado h1{
+font-family:'Playfair Display',serif;
+font-size:72px;
+color:#c97b8a;
+margin-bottom:15px;
+}
+
+.encabezado p{
+font-size:20px;
+color:#666;
+width:70%;
+max-width:760px;
+margin:auto;
+line-height:1.9;
+}
+
+/* SECCIÓN PRINCIPAL */
+
+.nosotros{
+width:88%;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+padding-bottom:90px;
+}
+
+/* IMAGEN */
+
+.imagen{
+width:420px;
+max-width:100%;
+border-radius:30px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+/* TEXTO */
+
+.texto{
+max-width:550px;
+}
+
+.texto h2{
+font-family:'Playfair Display',serif;
+font-size:45px;
+color:#c97b8a;
+margin-bottom:20px;
+}
+
+.texto p{
+font-size:17px;
+line-height:2;
+color:#666;
+margin-bottom:20px;
+}
+
+/* VALORES */
+
+.valores{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding-bottom:90px;
+}
+
+.card{
+background:white;
+width:300px;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Playfair Display',serif;
+font-size:30px;
+color:#c97b8a;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:16px;
+line-height:1.9;
+color:#666;
+}
+
+/* FRASE */
+
+.frase{
+text-align:center;
+padding-bottom:80px;
+font-size:26px;
+font-style:italic;
+font-family:'Playfair Display',serif;
+color:#b56b79;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+<section class="encabezado">
+
+<h1>Sobre Nosotros</h1>
+
+<p>
+En Val Beauty creemos que el maquillaje es una forma de expresión, confianza y creatividad.
+</p>
+
+</section>
+
+<section class="nosotros">
+
+<img src="nosotros.jpg" class="imagen">
+
+<div class="texto">
+
+<h2>¿Quiénes Somos?</h2>
+
+<p>
+Val Beauty nació con el objetivo de ofrecer productos de maquillaje y skincare modernos, elegantes y accesibles para todas las personas.
+</p>
+
+<p>
+Nos enfocamos en brindar calidad, estilo y una experiencia única, ayudando a cada cliente a sentirse segura, cómoda y auténtica.
+</p>
+
+<p>
+Nuestra inspiración viene de la belleza natural y de las nuevas tendencias del mundo del maquillaje.
+</p>
+
+</div>
+
+</section>
+
+<section class="valores">
+
+<div class="card">
+
+<h3>Misión</h3>
+
+<p>
+Ofrecer productos de belleza de excelente calidad que ayuden a resaltar la confianza y personalidad de cada persona.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Visión</h3>
+
+<p>
+Convertirnos en una marca reconocida por nuestro estilo elegante, innovación y atención personalizada.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Valores</h3>
+
+<p>
+Calidad, creatividad, confianza y pasión por la belleza son la base de todo lo que hacemos.
+</p>
+
+</div>
+
+</section>
+
+<p class="frase">
+“Confidence is the best makeup.” 
+</p>
+
+</body>
+</html>
